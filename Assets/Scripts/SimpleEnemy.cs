@@ -7,6 +7,8 @@ public class SimpleEnemy : MonoBehaviour
     private Vector3 startPos;
     private int direction = 1;
 
+    private Vector3 moveDirection;
+
     void Start()
     {
         startPos = transform.position;
@@ -15,6 +17,7 @@ public class SimpleEnemy : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.right * direction * speed * Time.deltaTime;
+        moveDirection.y = -0.1f;
 
         if (Mathf.Abs(transform.position.x - startPos.x) >= moveDistance)
         {

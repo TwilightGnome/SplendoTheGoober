@@ -28,6 +28,7 @@ public class CameraFollowX : MonoBehaviour
     {
         if (player != null && !cameraLocked)
         {
+            
             // Smoothly follow the player's X position while keeping Y and Z fixed
             Vector3 targetPosition = new Vector3(player.position.x, fixedY, fixedZ);
             if (smoothFollow){
