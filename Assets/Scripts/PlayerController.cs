@@ -28,7 +28,8 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.W))
+           
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 moveDirection.y = jumpForce;
             }
@@ -40,6 +41,22 @@ public class PlayerController : MonoBehaviour
         else
         {
             moveDirection.y -= gravity * Time.deltaTime;
+            if (moveDirection.y > 0)
+            {
+                if (Input.GetKeyUp(KeyCode.UpArrow))
+                {
+                    moveDirection.y = 0;
+                }
+            }
+            if (moveDirection.y < 0)
+            {
+                moveDirection.y = moveDirection.y * 1.02f;
+                if (moveDirection.y < -7)
+                {
+                    moveDirection.y = -7;
+                }
+            }
+            
         }
 
         controller.Move(moveDirection * Time.deltaTime);
