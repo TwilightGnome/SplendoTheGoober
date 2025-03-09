@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
            
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                moveDirection.y = jumpForce;
+                moveDirection.y = jumpForce*1.1f;
             }
             else
             {
@@ -51,9 +51,9 @@ public class PlayerController : MonoBehaviour
             if (moveDirection.y < 0)
             {
                 moveDirection.y = moveDirection.y * 1.02f;
-                if (moveDirection.y < -7)
+                if (moveDirection.y < -10)
                 {
-                    moveDirection.y = -7;
+                    moveDirection.y = -10;
                 }
             }
             
