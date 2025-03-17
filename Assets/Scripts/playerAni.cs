@@ -23,6 +23,7 @@ public class PlayerSpriteAnimator : MonoBehaviour
 
     void Update()
     {
+        spriteAnimator.SetFloat("Speed", Mathf.Abs(moveInput));
         // Example: Using horizontal input — replace with your actual movement logic if needed
         moveInput = Input.GetAxisRaw("Horizontal");
 
