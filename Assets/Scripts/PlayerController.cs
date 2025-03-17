@@ -51,9 +51,9 @@ public class PlayerController : MonoBehaviour
             if (moveDirection.y < 0)
             {
                 moveDirection.y = moveDirection.y * 1.02f;
-                if (moveDirection.y < -12)
+                if (moveDirection.y < -10)
                 {
-                    moveDirection.y = -12;
+                    moveDirection.y = -10;
                 }
             }
             
@@ -67,15 +67,24 @@ public class PlayerController : MonoBehaviour
     }
 
    private void OnControllerColliderHit(ControllerColliderHit hit)
-{
+    {
     //Debug.Log("Player hit: " + hit.gameObject.name);
 
-    if (hit.gameObject.CompareTag("Enemy"))
-    {
-        //Debug.Log("Player hit an Enemy! Respawning...");
-        Respawn();
+        if (hit.gameObject.CompareTag("Enemy"))
+        {
+            //Debug.Log("Player hit an Enemy! Respawning...")
+
+            // If player is in air and collides, enemy dies
+            if(!controller.isGrounded)
+            {
+                hit.gameObject.SetActive(false);
+            }
+            else
+            {
+                Respawn();
+            }
+        }
     }
-}
 
     void Respawn()
     {
