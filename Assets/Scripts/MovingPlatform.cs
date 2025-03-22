@@ -31,4 +31,15 @@ public class MovingPlatform : MonoBehaviour
             }
         }         
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        collision.transform.SetParent(transform);
+        Debug.Log("something is on the platform");
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+
+    }
 }

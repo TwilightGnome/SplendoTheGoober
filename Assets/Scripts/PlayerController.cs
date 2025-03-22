@@ -84,6 +84,13 @@ public class PlayerController : MonoBehaviour
                 Respawn();
             }
         }
+
+        if (hit.gameObject.CompareTag("end"))
+        {
+            //Time.timeScale = 0;
+            //new WaitForSeconds(3);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        }
     }
 
     void Respawn()
