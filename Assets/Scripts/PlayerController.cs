@@ -1,5 +1,7 @@
 using UnityEngine;
-
+using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -87,9 +89,9 @@ public class PlayerController : MonoBehaviour
 
         if (hit.gameObject.CompareTag("end"))
         {
-            //Time.timeScale = 0;
-            //new WaitForSeconds(3);
+            
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            
         }
     }
 
@@ -98,4 +100,6 @@ public class PlayerController : MonoBehaviour
         transform.position = startPosition; // Reset player to start position
         moveDirection = Vector3.zero; // Stop any movement
     }
+
+    
 }

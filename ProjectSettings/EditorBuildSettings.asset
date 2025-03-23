@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/PixelLevel.unity
+    guid: 87da15af3f6284a7a9a92511013457b0
+  - enabled: 1
+    path: Assets/Scenes/DrawnLevel.unity
+    guid: fc072ea184f0e4e17b7b0fbf5f6b7de4
+  - enabled: 1
+    path: Assets/Scenes/2.5DLevel.unity
+    guid: d68e304ff7dbc4975affa1d65a73a191
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
