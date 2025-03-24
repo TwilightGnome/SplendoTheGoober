@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerSpriteAnimator : MonoBehaviour
 {
     [Header("References")]
+
+    public bool backwards = false;
     public Transform spriteTransform;         // Reference to the child GameObject with the SpriteRenderer
     public Animator spriteAnimator;           // Animator on the child object
 
@@ -30,14 +32,19 @@ public class PlayerSpriteAnimator : MonoBehaviour
         // 1. Switch animation state (Idle ↔ Walking) based on movement
         spriteAnimator.SetFloat("Speed", Mathf.Abs(moveInput));
 
+        int b = 1; 
+        if (backwards){
+            b = -1;
+        }
+
         // 2. Flip sprite direction
         if (moveInput > 0)
         {
-            spriteTransform.localScale = new Vector3(-scale, scale, 1);
+            spriteTransform.localScale = new Vector3(-scale*b, scale, 1);
         }
         else if (moveInput < 0)
         {
-            spriteTransform.localScale = new Vector3(scale, scale, 1);
+            spriteTransform.localScale = new Vector3(scale*b, scale, 1);
         }
     }
 }
