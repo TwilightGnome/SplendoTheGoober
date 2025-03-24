@@ -4,10 +4,18 @@ using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 7f;
     public float jumpForce = 7f;
     public float gravity = 9.81f;
     public CharacterController controller;
+
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashForce = 20f;
+    private float dashTime = 0.2f;
+    private float dashCooldown = 1f;
+
+    [SerializeField] Rigidbody rb;
 
     private Vector3 moveDirection;
     private bool isGrounded;
@@ -21,6 +29,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
         isGrounded = controller.isGrounded;
 
         float moveX = Input.GetAxis("Horizontal");
@@ -28,9 +40,14 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * moveX;
         moveDirection.x = move.x * moveSpeed;
 
+        if((Input.GetKeyDown(KeyCode.Space)) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
         if (isGrounded)
         {
-           
+                    
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 moveDirection.y = jumpForce*1.1f;
@@ -58,6 +75,8 @@ public class PlayerController : MonoBehaviour
                     moveDirection.y = -10;
                 }
             }
+            
+           
             
         }
 
@@ -87,6 +106,17 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (hit.gameObject.CompareTag("Spike"))
+        {
+            //Debug.Log("Player hit an Enemy! Respawning...")
+
+            // If player is in air and collides, enemy dies
+           
+            
+                Respawn();
+            
+        }
+
         if (hit.gameObject.CompareTag("end"))
         {
             
@@ -99,6 +129,17 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = startPosition; // Reset player to start position
         moveDirection = Vector3.zero; // Stop any movement
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        rb.linearVelocity = new Vector2(transform.localScale.z * dashForce, 0f);
+        yield return new WaitForSeconds(dashTime);
+        isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     
