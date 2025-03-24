@@ -133,13 +133,16 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        controller.enabled = false;
         canDash = false;
         isDashing = true;
-        rb.linearVelocity = new Vector2(transform.localScale.z * dashForce, 0f);
+        rb.linearVelocity = new Vector3(transform.localScale.x * dashForce, 0f, 0f);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
+        controller.enabled = true;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+        
     }
 
     
