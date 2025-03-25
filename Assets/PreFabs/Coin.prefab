@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a056d9f820c45afba7aed121ed225a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinSound: {fileID: 8300000, guid: 172bbe5b137646b4ab7c1f1221198a5c, type: 3}
 --- !u!331 &25170568566637173
 SpriteMask:
   m_ObjectHideFlags: 0

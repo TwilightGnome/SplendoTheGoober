@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class coin : MonoBehaviour
 {
+    public AudioClip coinSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,10 +19,19 @@ public class coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            PlaySound();
             Destroy(gameObject);
         }
         
         
         
+    }
+
+    void PlaySound()
+    {
+        if (coinSound != null)
+        {
+            AudioSource.PlayClipAtPoint(coinSound, transform.position);
+        }
     }
 }
