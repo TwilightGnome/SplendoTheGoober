@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * moveX;
         moveDirection.x = move.x * moveSpeed;
 
-        if((Input.GetKeyDown(KeyCode.Space)) && canDash)
+        if((Input.GetKeyDown(KeyCode.Space)) && canDash && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
         {
             StartCoroutine(Dash());
         }
@@ -119,9 +119,15 @@ public class PlayerController : MonoBehaviour
 
         if (hit.gameObject.CompareTag("end"))
         {
-            
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-            
+            if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "PixelLevel")
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            }
+
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("3dLevel");
+            }
         }
     }
 

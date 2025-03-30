@@ -6,7 +6,7 @@ public class SimpleEnemy : MonoBehaviour
     public float moveDistance = 3f;
     public Transform spriteTransform;
     public float scale = 3.0f;   
-    private Vector3 startPos;
+     private Vector3 startPos;
     private int direction = 1;
 
     void Start()
