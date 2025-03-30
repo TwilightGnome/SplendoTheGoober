@@ -20,13 +20,15 @@ public class SimpleEnemy : MonoBehaviour
         transform.position += Vector3.right * direction * speed * Time.deltaTime;
 
         // Flip sprite direction based on movement
-        if (direction > 0)
-        {
-            spriteTransform.localScale = new Vector3(-scale, scale, 1);
-        }
-        else if (direction < 0)
-        {
-            spriteTransform.localScale = new Vector3(scale, scale, 1);
+        if (spriteTransform != null){ 
+            if (direction > 0)
+            {
+                spriteTransform.localScale = new Vector3(-scale, scale, 1);
+            }
+            else if (direction < 0)
+            {
+                spriteTransform.localScale = new Vector3(scale, scale, 1);
+            }
         }
 
         // Reverse direction if moved far enough

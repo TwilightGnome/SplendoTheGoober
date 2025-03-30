@@ -18,12 +18,16 @@ public class PlayerController3D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theRB.linearVelocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, theRB.linearVelocity.y, Input.GetAxis("Vertical") * moveSpeed);
+            Vector3 velocity = theRB.linearVelocity;
+        velocity.x = Input.GetAxis("Horizontal") * moveSpeed;
+        velocity.z = Input.GetAxis("Vertical") * moveSpeed;
+
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            theRB.linearVelocity = new Vector3(theRB.linearVelocity.x, jumpForce, theRB.linearVelocity.z);
-         
+            velocity.y = jumpForce;
         }
+
+        theRB.linearVelocity = velocity; 
 
         if(theRB.transform.position.y < -10)
         {
