@@ -2324,8 +2324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396, y: 170.61559}
-  m_SizeDelta: {x: 864.4365, y: 385.5769}
+  m_AnchoredPosition: {x: -380, y: 170.61559}
+  m_SizeDelta: {x: 930, y: 385.5769}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460417405
 MonoBehaviour:
@@ -2647,7 +2647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rWe gotta retool the experience.\nonce thats done, youll set your sequal,
+  m_text: "\rWe gotta retool the experience.\nonce thats done, youll set your sequel,
     promise!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -4338,7 +4338,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We're broke kid...
+  m_text: We're broke, kid...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -5662,8 +5662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.5064, y: -490}
-  m_SizeDelta: {x: 1869.8, y: 100}
+  m_AnchoredPosition: {x: -5.5064, y: -535}
+  m_SizeDelta: {x: 1869.8, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1479782223
 MonoBehaviour:
@@ -6805,7 +6805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You made us a heck of a game, but fact is...
+  m_text: You made us a heck of a game, but the fact is...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -7512,7 +7512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: What do you mean remake?
+  m_text: What do you mean, remake?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -8378,7 +8378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rI like you kid, you got fire. \n\r\nRight now we need Splendo reintroduced
+  m_text: "\rI like you kid, you've got fire. \n\r\nRight now we need Splendo reintroduced
     to\r\nthe WEGA audience."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
