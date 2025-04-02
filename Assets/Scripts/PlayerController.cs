@@ -21,10 +21,21 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Vector3 startPosition;
 
+    public AudioClip buttonSound;
+    public AudioClip playerHurt;
+    public AudioClip enemyHurt;
+    public AudioClip playerJump;
+    public AudioClip playerDash;
+    public AudioClip[] footstepSounds;  
+    private AudioSource audioSource;  // AudioSource to play the sounds
+    private float stepTimer = 0f;  // Timer to control when to play the next footstep sound
+    public float stepInterval = 0.3f; // Interval between footstep sounds (adjust based on your movement speed)
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         startPosition = transform.position; // Store the starting position
+        audioSource = GetComponent<AudioSource>();  // Get the AudioSource component
     }
 
     void Update()
@@ -42,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
         if((Input.GetKeyDown(KeyCode.Space)) && canDash && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
         {
+            audioSource.PlayOneShot(playerDash);
             StartCoroutine(Dash());
         }
 
@@ -50,11 +62,18 @@ public class PlayerController : MonoBehaviour
                     
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
+                audioSource.PlayOneShot(playerJump);
                 moveDirection.y = jumpForce*1.1f;
             }
             else
             {
                 moveDirection.y = -0.1f; // Reset vertical movement when grounded
+            }
+            // Handle footstep sounds when moving
+            if (Mathf.Abs(moveDirection.x) > 0 && stepTimer <= 0f)
+            {
+                PlayFootstepSound();
+                stepTimer = stepInterval;  // Reset the timer
             }
         }
         else
@@ -80,6 +99,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
+        stepTimer -= Time.deltaTime; // Decrease the step timer each frame
         controller.Move(moveDirection * Time.deltaTime);
 
         if(transform.position.y <= -10){
@@ -98,10 +118,12 @@ public class PlayerController : MonoBehaviour
             // If player is in air and collides, enemy dies
             if(!controller.isGrounded)
             {
+                audioSource.PlayOneShot(enemyHurt);
                 hit.gameObject.SetActive(false);
             }
             else
             {
+                audioSource.PlayOneShot(playerHurt);
                 Respawn();
             }
         }
@@ -113,6 +135,7 @@ public class PlayerController : MonoBehaviour
             // If player is in air and collides, enemy dies
            
             
+                audioSource.PlayOneShot(playerHurt);
                 Respawn();
             
         }
@@ -121,11 +144,13 @@ public class PlayerController : MonoBehaviour
         {
             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "PixelLevel")
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+                audioSource.PlayOneShot(buttonSound);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
             }
-
+            
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
             {
+                audioSource.PlayOneShot(buttonSound);
                 UnityEngine.SceneManagement.SceneManager.LoadScene("3dLevel");
             }
         }
@@ -149,6 +174,16 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
         
+    }
+
+    private void PlayFootstepSound()
+    {
+        // Play a random footstep sound from the array
+        if (footstepSounds.Length > 0)
+        {
+            int randomIndex = Random.Range(0, footstepSounds.Length);
+            audioSource.PlayOneShot(footstepSounds[randomIndex]);
+        }
     }
 
     

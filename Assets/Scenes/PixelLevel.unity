@@ -4361,6 +4361,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: enemyHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: b3dc45c78a858554bb77a5ea5b50bd2d, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
@@ -4368,6 +4372,34 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: playerHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: 76d4158d9b3b37449a473ebc535271c1, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: playerJump
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: 'footstepSounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 97977ae47d5a0ad469614c3226f26c47, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: 'footstepSounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b5b3c588b736644da7aa89f41ae885f, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: 'footstepSounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ce01f1e3d41e78140aba0f78ce7ff514, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: 'footstepSounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: aeedcc91668079446a96a5b1fbe32be0, type: 3}
     - target: {fileID: 7996147097888543507, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
       propertyPath: m_IsTrigger
       value: 1
