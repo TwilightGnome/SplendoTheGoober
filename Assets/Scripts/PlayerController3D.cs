@@ -8,6 +8,7 @@ public class PlayerController3D : MonoBehaviour
     public float jumpForce;
     private Vector3 startPosition;
     public float dashForce;
+    Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,13 +19,16 @@ public class PlayerController3D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
             Vector3 velocity = theRB.linearVelocity;
         velocity.x = Input.GetAxis("Horizontal") * moveSpeed;
         velocity.z = Input.GetAxis("Vertical") * moveSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
+            
             velocity.y = jumpForce;
+            //anim.SetBool("isjumping", true);
         }
 
         theRB.linearVelocity = velocity; 
