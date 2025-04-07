@@ -38,9 +38,10 @@ public class PlayerController3D : MonoBehaviour
             Respawn();
         }
 
-        if (transform.position.y > 0)
+        if (!IsGrounded())
         {
-            anim.SetBool("isjumping", true);
+            GetComponentInChildren<Animator>().SetBool("isjumping", true);
+            
         }
 
         if (IsGrounded())

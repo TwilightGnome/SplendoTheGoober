@@ -15978,6 +15978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base mesh MonsterMutant7
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e1af740f30dfdb14a9cbcc62f6e78120, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e1af740f30dfdb14a9cbcc62f6e78120, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
