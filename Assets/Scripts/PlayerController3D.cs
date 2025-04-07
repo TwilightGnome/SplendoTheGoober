@@ -35,6 +35,18 @@ public class PlayerController3D : MonoBehaviour
         }
     }
 
+    private void OrollerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("end"))
+        {   
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "3dLevel")
+            {
+                //audioSource.PlayOneShot(buttonSound);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_3");
+            }
+        }
+    }
+
     bool IsGrounded()
     {
         float GroundedDistance = 2f;

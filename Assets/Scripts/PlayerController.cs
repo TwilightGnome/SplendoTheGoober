@@ -145,13 +145,13 @@ public class PlayerController : MonoBehaviour
             if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "PixelLevel")
             {
                 audioSource.PlayOneShot(buttonSound);
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_1");
             }
             
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
             {
                 audioSource.PlayOneShot(buttonSound);
-                UnityEngine.SceneManagement.SceneManager.LoadScene("3dLevel");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_2");
             }
         }
     }
