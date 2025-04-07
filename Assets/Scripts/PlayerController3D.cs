@@ -28,7 +28,7 @@ public class PlayerController3D : MonoBehaviour
         {
             
             velocity.y = jumpForce;
-            //anim.SetBool("isjumping", true);
+            
         }
 
         theRB.linearVelocity = velocity; 
@@ -36,6 +36,26 @@ public class PlayerController3D : MonoBehaviour
         if(theRB.transform.position.y < -10)
         {
             Respawn();
+        }
+
+        if (transform.position.y > 0)
+        {
+            anim.SetBool("isjumping", true);
+        }
+
+        if (IsGrounded())
+        {
+            anim.SetBool("isjumping", false);
+        }
+
+        if (theRB.linearVelocity == Vector3.zero)
+        {
+            anim.SetBool("isrunning", false);
+        }
+
+        if (theRB.linearVelocity != Vector3.zero)
+        {
+            anim.SetBool("isrunning", true);
         }
     }
 
