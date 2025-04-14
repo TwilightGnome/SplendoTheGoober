@@ -8,7 +8,9 @@ public class PlayerController3D : MonoBehaviour
     public float jumpForce;
     private Vector3 startPosition;
     public float dashForce;
-    Animator anim;
+    public Animator anim;
+    private AudioSource audioSource;  // AudioSource to play the sounds
+    public AudioClip buttonSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -62,6 +64,7 @@ public class PlayerController3D : MonoBehaviour
       
 
         GetComponentInChildren<Transform>().rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+
         
     }
 
@@ -69,11 +72,10 @@ public class PlayerController3D : MonoBehaviour
     {
         if (hit.gameObject.CompareTag("end"))
         {   
-            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "3dLevel")
-            {
+            
                 //audioSource.PlayOneShot(buttonSound);
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_3");
-            }
+            
         }
     }
 
