@@ -46,17 +46,17 @@ public class PlayerController3D : MonoBehaviour
 
         if (IsGrounded())
         {
-            anim.SetBool("isjumping", false);
+            GetComponentInChildren<Animator>().SetBool("isjumping", false);
         }
 
         if (theRB.linearVelocity == Vector3.zero)
         {
-            anim.SetBool("isrunning", false);
+            GetComponentInChildren<Animator>().SetBool("isrunning", false);
         }
 
         if (theRB.linearVelocity != Vector3.zero)
         {
-            anim.SetBool("isrunning", true);
+            GetComponentInChildren<Animator>().SetBool("isrunning", true);
         }
     }
 
