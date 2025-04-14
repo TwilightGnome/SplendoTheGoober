@@ -10,6 +10,7 @@ public class PlayerController3D : MonoBehaviour
     public float dashForce;
     Animator anim;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -58,6 +59,10 @@ public class PlayerController3D : MonoBehaviour
         {
             GetComponentInChildren<Animator>().SetBool("isrunning", true);
         }
+      
+
+        GetComponentInChildren<Transform>().rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
+        
     }
 
     private void OrollerColliderHit(ControllerColliderHit hit)
