@@ -7440,6 +7440,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2f63e371710f7421ea5e5109e6b08d01, type: 3}
   - {fileID: 21300000, guid: 5d9156211a61a45de9958dd1f04f124b, type: 3}
   - {fileID: 21300000, guid: 5461121464b5b5144ab73b4af19b0e87, type: 3}
+  - {fileID: 21300000, guid: 76e38a96258020e43a547e09cce87fbb, type: 3}
+  - {fileID: 21300000, guid: 5992f6929dd3fdc469c9a51271b53094, type: 3}
   minAdInterval: 10
   maxAdInterval: 20
 --- !u!4 &704014186

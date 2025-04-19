@@ -12769,7 +12769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Splendos appeal wasn't enough.
+  m_text: Splendo's appeal wasn't enough.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
