@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing)
         {
+            
             return;
         }
         isGrounded = controller.isGrounded;
@@ -53,10 +54,11 @@ public class PlayerController : MonoBehaviour
 
         if((Input.GetKeyDown(KeyCode.Space)) && canDash && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
         {
+            
             audioSource.PlayOneShot(playerDash);
             StartCoroutine(Dash());
         }
-
+        
         if (isGrounded)
         {
                     
@@ -174,12 +176,14 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        GetComponentInChildren<Animator>().SetBool("animDashing", true);
         controller.enabled = false;
         canDash = false;
         isDashing = true;
         rb.linearVelocity = new Vector3(transform.localScale.x * dashForce, 0f, 0f);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
+        GetComponentInChildren<Animator>().SetBool("animDashing", false);
         controller.enabled = true;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
