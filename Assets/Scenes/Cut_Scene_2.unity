@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: goodbye and Good luck kid.
+  m_text: Goodbye and good luck, kid.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: i've been here before.
+  m_text: I've been here before.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: think of it as a blessing. you are the sole reason splendo exists
+  m_text: Think of it as a blessing. You are the sole reason Splendo exists!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: we just need this remake first.
+  m_text: We just need this remake first.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello, i'm brad, ceo of woogle. it's great to finally meet you.
+  m_text: Hello, I'm Brad, Ceo of Woogle. It's great to finally meet you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -4060,7 +4060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I'm confused. wega owned the rights and you bought them.
+  m_text: I'm confused. Wega owned the rights, and you bought them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -4196,7 +4196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: think of it as a blessing. you are the sole reason splendo exists
+  m_text: Think of it as a blessing. You are the sole reason Splendo exists!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello, i'm brad, ceo of woogle. it's great to finally meet you.
+  m_text: Hello, I'm Brad, CEO of Woogle. It's great to finally meet you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -4949,7 +4949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: and what, do nothing with it?
+  m_text: And what, do nothing with it?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -5172,7 +5172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Look.. I'm sorry, but its over.
+  m_text: Look... I'm sorry, but it's over.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -5577,7 +5577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes with wega, they were... less resilient then us.
+  m_text: Yes, with Wega. They were... less resilient than us.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -6414,7 +6414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: of course!
+  m_text: Of course!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -6625,7 +6625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: it's dead. We tried, we failed.
+  m_text: It's dead. We tried, and we failed.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -7232,7 +7232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I'm confused. wega owned the rights and you bought them.
+  m_text: I'm confused. Wega owned the rights and you bought them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -9718,7 +9718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: let me be clear, we want your sequel too.
+  m_text: Let me be clear, we want your sequel, too.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -10320,7 +10320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: okay, i'll help. but then my sequel will finally get made?
+  m_text: Okay, I'll help. But then my sequel will finally get made?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -10532,7 +10532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes with wega, they were... less resilient then us.
+  m_text: Yes, with Wega. They were... less resilient than us.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -11019,7 +11019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: why do you need my permission?
+  m_text: Why do you need my permission?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -11487,7 +11487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Splendos appeal wasn't enough.
+  m_text: Splendo's appeal wasn't enough.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -12483,7 +12483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: i trust you've looked over our offer?
+  m_text: I trust you've looked over our offer?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -13602,7 +13602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes with wega, they were... less resilient then us.
+  m_text: Yes, with Wega. They were... less resilient than us.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -13889,7 +13889,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: let me be clear, we want your sequel too.
+  m_text: Let me be clear, we want your sequel, too.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -14981,7 +14981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: we want your input on it's revival.
+  m_text: We want your input on its revival.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -15328,7 +15328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You're just gonna hold the ip?
+  m_text: You're just gonna hold the IP?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
