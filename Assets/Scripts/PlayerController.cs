@@ -105,6 +105,16 @@ public class PlayerController : MonoBehaviour
         if(transform.position.y <= -10){
             Respawn();
         }
+
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
+        {
+            if(transform.position.x > 238.5)
+            {
+                audioSource.PlayOneShot(buttonSound);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_2");
+            }
+            
+        }
     }
 
    private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -148,11 +158,11 @@ public class PlayerController : MonoBehaviour
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_1");
             }
             
-            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
-            {
-                audioSource.PlayOneShot(buttonSound);
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_2");
-            }
+            //if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "DrawnLevel")
+            //{
+              //  audioSource.PlayOneShot(buttonSound);
+                //UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_2");
+            //}
         }
     }
 

@@ -65,19 +65,24 @@ public class PlayerController3D : MonoBehaviour
 
         GetComponentInChildren<Transform>().rotation = Quaternion.LookRotation(transform.forward, Vector3.up);
 
+        if(theRB.transform.position.z > 508)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_3");
+        }
         
+
     }
 
-    private void OrollerColliderHit(ControllerColliderHit hit)
-    {
-        if (hit.gameObject.CompareTag("end"))
-        {   
+    //private void OrollerColliderHit(ControllerColliderHit hit)
+    //{
+    //    if (hit.gameObject.CompareTag("end"))
+     //   {   
             
                 //audioSource.PlayOneShot(buttonSound);
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_3");
+    //            UnityEngine.SceneManagement.SceneManager.LoadScene("Cut_Scene_3");
             
-        }
-    }
+    //    }
+    //}
 
     bool IsGrounded()
     {
