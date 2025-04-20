@@ -174,11 +174,13 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        GetComponentInChildren<Animator>().SetBool("animDashing", true);
         controller.enabled = false;
         canDash = false;
         isDashing = true;
         rb.linearVelocity = new Vector3(transform.localScale.x * dashForce, 0f, 0f);
         yield return new WaitForSeconds(dashTime);
+        GetComponentInChildren<Animator>().SetBool("animDashing", false);
         isDashing = false;
         controller.enabled = true;
         yield return new WaitForSeconds(dashCooldown);
