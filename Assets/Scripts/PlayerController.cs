@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
         }
         isGrounded = controller.isGrounded;
 
+        
+
         float moveX = Input.GetAxis("Horizontal");
         
         Vector3 move = transform.right * moveX;
@@ -64,9 +66,11 @@ public class PlayerController : MonoBehaviour
             {
                 audioSource.PlayOneShot(playerJump);
                 moveDirection.y = jumpForce*1.1f;
+                GetComponentInChildren<Animator>().SetBool("animJumping", true);
             }
             else
             {
+                GetComponentInChildren<Animator>().SetBool("animJumping", false);
                 moveDirection.y = -0.1f; // Reset vertical movement when grounded
             }
             // Handle footstep sounds when moving
