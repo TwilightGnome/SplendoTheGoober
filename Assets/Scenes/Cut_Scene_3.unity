@@ -1697,7 +1697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: With that.. splendos sequel will not be moving forward.
+  m_text: With that... splendo's sequel will not be moving forward.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I resign
+  m_text: I resign.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -2886,7 +2886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nadia isn't doing so well
+  m_text: Nadia isn't doing so well.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
@@ -10502,7 +10502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: programing
+  m_text: programming
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 530df9f997473d04eae48196ab6c8298, type: 2}
   m_sharedMaterial: {fileID: 7183657497077759735, guid: 530df9f997473d04eae48196ab6c8298, type: 2}

@@ -4379,7 +4379,11 @@ PrefabInstance:
     - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
       propertyPath: playerJump
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 064ec8349e36d6644b9bce648dca310c, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e6f8c2dddaf08145bbae1b008bc7f73, type: 3}
     - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
       propertyPath: footstepSounds.Array.size
       value: 4

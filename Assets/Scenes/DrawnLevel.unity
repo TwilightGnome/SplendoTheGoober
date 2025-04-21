@@ -8223,6 +8223,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 1ca668d7ec00d764ca6dc661614f5069, type: 3}
     - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
+      propertyPath: playerJump
+      value: 
+      objectReference: {fileID: 8300000, guid: e072b7be5a1ee6b4ba3356b5a5c76d4d, type: 3}
+    - target: {fileID: 6492173736273055907, guid: 0d5cc5e1385a8f344aae488eba56cc76, type: 3}
       propertyPath: buttonSound
       value: 
       objectReference: {fileID: 8300000, guid: 00de508a0fe42804a838cc4b52814686, type: 3}
