@@ -11,12 +11,19 @@ public class PlayerController3D : MonoBehaviour
     public Animator anim;
     private AudioSource audioSource;  // AudioSource to play the sounds
     public AudioClip buttonSound;
+    public AudioClip jumpSound;
+    public AudioClip[] stepSounds;
+    public AudioClip hurtSound;
+
+    private bool wasGrounded;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startPosition = transform.position;
+        audioSource = GetComponent<AudioSource>();
+        wasGrounded = IsGrounded();
     }
 
     // Update is called once per frame
@@ -31,6 +38,8 @@ public class PlayerController3D : MonoBehaviour
         {
             
             velocity.y = jumpForce;
+            if (jumpSound != null)
+                audioSource.PlayOneShot(jumpSound);
             
         }
 
@@ -38,8 +47,19 @@ public class PlayerController3D : MonoBehaviour
 
         if(theRB.transform.position.y < -10)
         {
+            PlayHurtSound();
             Respawn();
         }
+
+        bool isGrounded = IsGrounded();
+
+        // Landing detection for footstep sounds
+        if (!wasGrounded && isGrounded)
+        {
+            PlayStepSound();
+        }
+
+        wasGrounded = isGrounded;
 
         if (!IsGrounded())
         {
@@ -72,6 +92,7 @@ public class PlayerController3D : MonoBehaviour
         
 
     }
+    
 
     //private void OrollerColliderHit(ControllerColliderHit hit)
     //{
@@ -99,6 +120,21 @@ public class PlayerController3D : MonoBehaviour
     {
         transform.position = startPosition; // Reset player to start position
         theRB.linearVelocity = Vector3.zero; // Stop any movement
+    }
+
+    void PlayStepSound()
+    {
+        if (stepSounds.Length > 0)
+        {
+            int index = Random.Range(0, stepSounds.Length);
+            audioSource.PlayOneShot(stepSounds[index]);
+        }
+    }
+
+    void PlayHurtSound()
+    {
+        if (hurtSound != null)
+            audioSource.PlayOneShot(hurtSound);
     }
 
 }
