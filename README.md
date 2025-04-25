@@ -1,11 +1,14 @@
 # SplendoTheGoober
 
 ## Contributors
-David Halasz,
+David Halasz
 
 Cam Queck
+
 Ricky Conrad
+
 Olivia Waite
+
 Joshua Frank
 
 ## Setup
