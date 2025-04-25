@@ -1,5 +1,12 @@
 # SplendoTheGoober
 
+## Contributors
+David Halasz
+Cam Queck
+Ricky Conrad
+Olivia Waite
+Joshua Frank
+
 ## Setup
 Ensure you have Unity 6000.0.37f1
 
